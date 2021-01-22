@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/blevesearch/bleve"
-	bleveHttp "github.com/blevesearch/bleve/http"
+	"github.com/blevesearch/bleve/v2"
+	bleveHttp "github.com/blevesearch/bleve/v2/http"
 	"github.com/gorilla/mux"
 
 	// import general purpose configuration
-	_ "github.com/blevesearch/bleve/config"
+	_ "github.com/blevesearch/bleve/v2/config"
 )
 
 func searchInit(data string, addr string) {

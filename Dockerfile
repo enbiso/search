@@ -1,7 +1,6 @@
 FROM golang AS builder
 WORKDIR /go/src/search
 COPY . .
-RUN go get -d .
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo
 
 FROM scratch
